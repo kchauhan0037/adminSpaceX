@@ -1,11 +1,26 @@
  @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Dosis:wght@200;800&family=Montserrat&family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
 
+body{
+  background-image: url('https://wallpapercave.com/wp/wp2284535.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+*{
+  font-family: 'Caveat Brush', cursive;
+font-family: 'Dosis', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+/* color: azure; */
+}
 
 .launch-bar-chart{
     width: calc(38% - 16px - 10px - 40px);
     height:100%;
     box-shadow: 0 0 3px gray;
     border-radius: 10px;
+    color: beige;
     
 }
 #topbar{
@@ -13,7 +28,7 @@
     width: 95%;
     height: 80px;
     display: flex;
-    background-color: aqua;
+    background-image: linear-gradient(to top,#363062c2,#4d4c7d89);
     align-items: center;
     justify-content: space-around;
     /* padding-right: 10px; */
@@ -21,9 +36,10 @@
 font-family: 'Dosis', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
-box-shadow: 0 4px 7px gray;
+box-shadow: 0 4px 7px rgb(226, 248, 155);
 border-bottom-left-radius: 8px;
 border-bottom-right-radius: 8px;
+color: azure;
 }
 
 #topitems{
@@ -36,6 +52,8 @@ border-bottom-right-radius: 8px;
 
 #menueicon{
    font-size: 1.1re;
+   cursor: pointer;
+   position: relative;
 }
 
 #userwrapper{
@@ -58,16 +76,17 @@ border-bottom-right-radius: 8px;
     margin-left: 20px;
     /* overflow: hidden; */
     box-sizing: border-box;
+    color: azure;
 }
 
 #menuetree ul {
-    padding: 0; /* Add this to remove default padding */
+    padding: 0; 
 }
 
 #menuetree ul li {
-    /* Adjust width and padding to fit within the menuetree */
-    width: 90%; /* Example width adjustment */
-    padding: 10px; /* Example padding adjustment */
+   
+    width: 90%; 
+    padding: 10px; 
     list-style: none;
     margin: 0;
     cursor: pointer;
@@ -85,14 +104,15 @@ border-bottom-right-radius: 8px;
 }
 
 #container{
-    width: 100%;
+    width: 95%;
     height: 600px;
-    margin: 10px auto;
+    margin: 90px auto;
     display: flex;
     /* align-items: center; */
     justify-content: space-around;
-    /* background-color: burlywood; */
+    background-color: #007bff16;
     border-radius: 8px;
+    color: azure;
 }
 
 #graphicdetails{
@@ -146,12 +166,29 @@ border-bottom-right-radius: 8px;
 
 }
 
-#mapwrapper{
+#totallauches:hover{
+
+background-color: #ff00bb;
+transform: scale(1.04);
+}
+
+#upcomig:hover{
+  background-color: #007bff;
+  transform: scale(1.04);
+}
+
+#past:hover{
+  background-color: #007bff;
+  transform: scale(1.04);
+}
+
+#map{
     width: calc(38% - 16px - 10px - 40px);
     height:100%;
     box-shadow: 0 0 3px gray;
     border-radius: 10px;
     overflow: hidden;
+    color: black;
     
 }
 
@@ -233,7 +270,7 @@ border-bottom-right-radius: 8px;
   }
 
 
-  .full-width {
+  .full-width  {
     width: 90%;
     height: 100%;
     margin: 0px auto;
@@ -255,9 +292,9 @@ border-bottom-right-radius: 8px;
   #menu-dropdown {
     display: none;
     position: absolute;
-    top: 50px;
-    right: 140px;
-    background-color: white;
+    top: 90%;
+    right: -30px;
+    background-color: rgb(89, 29, 29);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     z-index: 1;
@@ -277,3 +314,166 @@ border-bottom-right-radius: 8px;
     color: white;
   }
   
+
+  #loginalert{
+    margin: 200px auto;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 0 0 4px #ff000d;
+  }
+
+
+
+.rocket-icon {
+  font-size: 24px;
+  color: #FF5733; 
+}
+
+
+
+@media (max-width: 768px) {
+
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #topbar {
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+
+  #topitems {
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-around;
+  }
+
+  #menueicon {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  #userwrapper {
+    padding-left: 0;
+  }
+
+  #menuetree {
+    width: 100%;
+    /* margin-left: 0;
+    margin-top: 340px; */
+    position: absolute;
+    top: 0;
+    left: -20px;
+    
+  }
+
+  #menuetree ul li {
+    font-size: 1rem;
+  }
+
+  #container {
+    flex-direction: column;
+    /* margin: 100px auto; */
+    gap: 200px;
+    /* border: 1px solid green; */
+    box-sizing: border-box;
+    padding: 5px;
+    position: relative;
+    height: 300vh;
+  }
+
+  #graphicdetails {
+    height: 100%;
+    width: 80%;
+    display: block;
+    padding: 8px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+    /* border: 2px solid  #ff000d; */
+  }
+
+  #analyticboard {
+    display: block;
+    /* flex-direction: column;
+    gap: 15px; */
+    width: 80%;
+    /* margin: 0px auto; */
+    /* border: 1px solid #007bff; */
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+  }
+
+  #upcomig, #past, #totallauches {
+    width: 80%;
+    margin: 0;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 20px;
+  }
+
+  #upcomig p{
+    margin: 0;
+  }
+
+  #past p{
+    margin: 0;
+  }
+
+  #totallauches p{
+    margin: 0;
+  }
+
+  #map {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 20px;
+  }
+
+  #wrapper2 {
+    padding-top: 50px;
+    width: 100%;
+   display: block;
+   overflow: hidden;
+   position: absolute;
+   top: 250px;
+   left: 0;
+   box-sizing: border-box;
+
+  }
+
+  .launch-bar-chart {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .launch-timeline {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    padding: 10px;
+    overflow: scroll;
+  }
+
+
+  .full-width  {
+    width: 90%;
+    height: 100%;
+    margin: 0px auto;
+    border-radius: 8px;
+    overflow: scroll;
+    box-shadow: 0 0 3px gray;
+
+   
+  }
+}

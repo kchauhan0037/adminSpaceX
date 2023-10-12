@@ -58,7 +58,13 @@ class LaunchBarChart extends Component {
   render() {
     // {console.log(this.state.options+this.state.series)}
     return (
-      <div className={this.props.changeclass === 'Launch Bar Chart' ? "full-width" : "launch-bar-chart"} >
+      <div
+        className={
+          this.props.changeclass === "Launch Bar Chart"
+            ? "full-width"
+            : "launch-bar-chart"
+        }
+      >
         <ReactApexChart
           options={this.state.options}
           series={this.state.series}
