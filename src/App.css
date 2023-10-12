@@ -2,7 +2,7 @@
 
 body{
   background-image: url('https://wallpapercave.com/wp/wp2284535.jpg');
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -12,6 +12,7 @@ body{
 font-family: 'Dosis', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
+
 /* color: azure; */
 }
 
