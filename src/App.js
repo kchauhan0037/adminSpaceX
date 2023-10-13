@@ -92,7 +92,7 @@ class App extends React.Component {
 
         {!this.state.userLoggedIn && (
           <div id="loginalert">
-            <h1>click above on the menu to login</h1>
+            <h1>click above for login</h1>
           </div>
         )}
 
